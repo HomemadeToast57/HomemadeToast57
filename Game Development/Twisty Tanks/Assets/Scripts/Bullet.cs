@@ -12,11 +12,38 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentBounce = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.CompareTag("Arena"))
+        {
+            if(currentBounce < maxBounces)
+            {
+                currentBounce++;
+            } else if(currentBounce == maxBounces)
+            {
+                //Call in particle
+                //Destroy particle
+                Destroy(gameObject);
+            }
+        }
+        if(collision.collider.CompareTag("P1"))
+        {
+            //Call some function of P1 damaged
+            Destroy(gameObject);
+        }
+        if (collision.collider.CompareTag("P2"))
+        {
+            //Call some function of P1 damaged
+            Destroy(gameObject);
+        }
     }
 }

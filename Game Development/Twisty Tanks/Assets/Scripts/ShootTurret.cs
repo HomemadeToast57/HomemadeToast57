@@ -40,7 +40,6 @@ public class ShootTurret : MonoBehaviour
             {
                 GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
                 Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-                this.transform.forward = this.GetComponent<Rigidbody2D>().velocity;
                 rb.AddForce(firePoint.up * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
             }
 

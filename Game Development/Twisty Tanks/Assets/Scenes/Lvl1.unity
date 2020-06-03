@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 29896158}
   m_Layer: 8
   m_Name: Arena
-  m_TagString: Untagged
+  m_TagString: Arena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,29 +235,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &553655259 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7871261429145519198, guid: 583c5b49641544891bd8e6fb0d944453,
-    type: 3}
-  m_PrefabInstance: {fileID: 7871261428625432453}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &553655260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553655259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff9dea46986ca457186e473a91bc4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7509929836867087561, guid: e8439a0ad44da4c2dbb0829de7440b9d,
-    type: 3}
-  firePoint: {fileID: 1109663763}
-  bulletSpeed: 450
-  playerCode: P2
 --- !u!1 &621639528
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +246,7 @@ GameObject:
   - component: {fileID: 621639529}
   m_Layer: 8
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Arena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -290,12 +267,6 @@ Transform:
   m_Father: {fileID: 29896158}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1109663763 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7871261427516309398, guid: 583c5b49641544891bd8e6fb0d944453,
-    type: 3}
-  m_PrefabInstance: {fileID: 7871261428625432453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1454122339
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,12 +297,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1786616443 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5681520819813404630, guid: daff249b2e3834eabb7281e268f6b38b,
-    type: 3}
-  m_PrefabInstance: {fileID: 5681520818095084973}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1824880017
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +309,7 @@ GameObject:
   - component: {fileID: 1824880019}
   m_Layer: 8
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: Arena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,7 +391,7 @@ GameObject:
   - component: {fileID: 1867701884}
   m_Layer: 8
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: Arena
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -546,29 +511,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2104995793 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5681520820199684732, guid: daff249b2e3834eabb7281e268f6b38b,
-    type: 3}
-  m_PrefabInstance: {fileID: 5681520818095084973}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2104995794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104995793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff9dea46986ca457186e473a91bc4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6125836218887809192, guid: 8bf4b66c553fe47808d5e7d37801da60,
-    type: 3}
-  firePoint: {fileID: 1786616443}
-  bulletSpeed: 450
-  playerCode: P1
 --- !u!1001 &5681520818095084973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -576,11 +518,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5681520819813404630, guid: daff249b2e3834eabb7281e268f6b38b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.8
-      objectReference: {fileID: 0}
     - target: {fileID: 5681520820199684730, guid: daff249b2e3834eabb7281e268f6b38b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -641,16 +578,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: P1
       objectReference: {fileID: 0}
-    - target: {fileID: 5681520820199684734, guid: daff249b2e3834eabb7281e268f6b38b,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 6.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 5681520820199684734, guid: daff249b2e3834eabb7281e268f6b38b,
-        type: 3}
-      propertyPath: playerRotateSpeed
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daff249b2e3834eabb7281e268f6b38b, type: 3}
 --- !u!1001 &7871261428625432453
@@ -660,21 +587,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7871261427516309398, guid: 583c5b49641544891bd8e6fb0d944453,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7871261429145519193, guid: 583c5b49641544891bd8e6fb0d944453,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 6.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 7871261429145519193, guid: 583c5b49641544891bd8e6fb0d944453,
-        type: 3}
-      propertyPath: playerRotateSpeed
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 7871261429145519194, guid: 583c5b49641544891bd8e6fb0d944453,
         type: 3}
       propertyPath: m_LocalPosition.x

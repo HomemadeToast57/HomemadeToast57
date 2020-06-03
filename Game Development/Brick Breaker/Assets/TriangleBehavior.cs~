@@ -1,0 +1,55 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TriangleBehavior : MonoBehaviour
+{
+    public int health;
+    private SpriteRenderer sr;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        changeColor();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void TakeDamage()
+    {
+        if(health > 1)
+        {
+            health--;
+            changeColor();
+            
+        } else
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
+    public void changeColor()
+    {
+        switch (health)
+        {
+            case 1:
+                sr.color = new Color(172, 193, 200, 1);
+                break;
+            case 2:
+                sr.color = new Color(58, 62, 59, 1);
+                break;
+            case 3:
+                sr.color = new Color(41, 21, 40, 1);
+                break;
+            default:
+                sr.color = new Color(172, 193, 200, 1);
+                break;
+        }
+    }
+}

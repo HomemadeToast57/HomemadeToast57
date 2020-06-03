@@ -1,0 +1,73 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BallMovement : MonoBehaviour
+{
+
+    public bool inPlay;
+    public float speed;
+    public Transform ballPosition;
+    private Rigidbody2D rb;
+    public float timerSeconds = 5;
+    public float secondsTillPull;
+    public GameObject gameManager;
+    
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        inPlay = false;
+        rb = GetComponent<Rigidbody2D>();
+        transform.position = ballPosition.position;
+        secondsTillPull = timerSeconds;
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+      
+        if (!inPlay)
+        {
+            transform.position = ballPosition.position;
+        }
+        if (!inPlay && Input.GetButtonDown("Jump"))
+        {
+            inPlay = true;
+            rb.velocity = new Vector2(rb.position.x, rb.position.y) * speed * Time.deltaTime;
+        }
+        if (inPlay)
+        {
+            if(secondsTillPull > 0)
+            {
+                secondsTillPull -= Time.deltaTime;
+                //Debug.Log((int)secondsTillPull);
+            } else if (secondsTillPull < 0)
+            {
+                //Do countdown stuff here
+
+                Debug.Log("Countdown Complete!");
+                rb.velocity = new Vector2(ballPosition.position.x - rb.position.x, ballPosition.position.y - rb.position.y) * speed * Time.deltaTime;
+
+                secondsTillPull = timerSeconds;
+            }
+        }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.CompareTag("Brick"))
+        {
+            collision.gameObject.GetComponent<TriangleBehavior>().TakeDamage();
+        }
+        if (collision.transform.CompareTag("Player"))
+        {
+            Time.timeScale = 0;
+        }
+    }
+
+}

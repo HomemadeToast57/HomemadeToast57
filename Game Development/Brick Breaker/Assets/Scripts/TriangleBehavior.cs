@@ -1,0 +1,55 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TriangleBehavior : MonoBehaviour
+{
+    public int health;
+    private SpriteRenderer sr;
+    public GameObject explosion;
+    private Vector3 currentPos;
+    [SerializeField] private Gradient gradient;
+    [SerializeField] private int maxHealth;
+    public GameObject gameManager;
+    
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        health = maxHealth;
+        sr = GetComponent<SpriteRenderer>();
+        changeColor();
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        currentPos = transform.position;
+
+    }
+
+    public void TakeDamage()
+    {
+        gameManager.GetComponent<GameManager>().addScore();
+        if (health > 1)
+        {
+            health--;
+            changeColor();
+            
+        } else
+        {
+            GameObject tempExplosion = Instantiate(explosion, transform.position, transform.rotation);
+            gameManager.GetComponent<GameManager>().brickDestroyed();
+            Destroy(tempExplosion, 2);
+            Destroy(gameObject);
+        }
+
+    }
+
+    public void changeColor()
+    {
+        
+        sr.color = gradient.Evaluate(((float)health / maxHealth));
+    }
+}

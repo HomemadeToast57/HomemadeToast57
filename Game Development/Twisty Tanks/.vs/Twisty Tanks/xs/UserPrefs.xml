@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{AD94D1F9-F859-6B68-924B-066B7C688627}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TankMovement.cs">
+    <Files>
+      <File FileName="Assets/TankMovement.cs" Line="14" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d24ba6c8-4e9f-4cec-8890-ac1a6329f19c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

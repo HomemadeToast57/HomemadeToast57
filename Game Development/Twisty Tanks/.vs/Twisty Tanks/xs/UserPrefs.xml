@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{AD94D1F9-F859-6B68-924B-066B7C688627}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShootTurret.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TankMovement.cs">
     <Files>
-      <File FileName="Assets/ShootTurret.cs" Line="42" Column="69" />
       <File FileName="Assets/Scripts/Bullet.cs" Line="46" Column="33" />
+      <File FileName="Assets/Scripts/TankMovement.cs" Line="28" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d24ba6c8-4e9f-4cec-8890-ac1a6329f19c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3f2c9ec8-8120-4947-bab8-e8fc5f022dfc" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Arena
+  - P1
+  - P2
   layers:
   - Default
   - TransparentFX

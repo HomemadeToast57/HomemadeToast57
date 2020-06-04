@@ -6,29 +6,7 @@ ScriptsOnlyBuild:
     - TankMovement
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
-    - UnityEditor.U2D.Animation.BoneReparentTool
-    - UnityEditor.U2D.Animation.CopyTool
-    - UnityEditor.U2D.Animation.GenerateGeometryTool
-    - UnityEditor.U2D.Animation.GenerateWeightsTool
-    - UnityEditor.U2D.Animation.MeshCache
-    - UnityEditor.U2D.Animation.MeshPreviewCache
-    - UnityEditor.U2D.Animation.MeshPreviewTool
-    - UnityEditor.U2D.Animation.MeshTool
-    - UnityEditor.U2D.Animation.MeshToolWrapper
-    - UnityEditor.U2D.Animation.SelectionTool
-    - UnityEditor.U2D.Animation.SkeletonCache
-    - UnityEditor.U2D.Animation.SkeletonTool
-    - UnityEditor.U2D.Animation.SkeletonToolWrapper
-    - UnityEditor.U2D.Animation.SkinningCache
     - UnityEditor.U2D.Animation.SkinningCachePersistentState
-    - UnityEditor.U2D.Animation.SpriteBoneInfluenceTool
-    - UnityEditor.U2D.Animation.SpriteCache
-    - UnityEditor.U2D.Animation.SwitchModeTool
-    - UnityEditor.U2D.Animation.VisibilityTool
-    - UnityEditor.U2D.Animation.WeightPainterTool
-    - UnityEditor.U2D.Animation.WeightPainterToolWrapper
-    Unity.2D.Sprite.Editor.dll:
-    - UnityEditor.U2D.Sprites.SpriteEditorWindow
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -53,7 +31,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/Hexagon.unity:
+    Assets/Scenes/Lvl1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -68,6 +46,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 62
@@ -81,11 +61,13 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14248}
+      Script: {instanceID: 584}
     - Class: 114
-      Script: {instanceID: 16106}
+      Script: {instanceID: 11682}
     - Class: 114
-      Script: {instanceID: 16116}
+      Script: {instanceID: 12456}
+    - Class: 114
+      Script: {instanceID: 14252}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -95,6 +77,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -199,6 +187,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: fcc7c917c1ed65ce7f142adefa0d3013
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bullet
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -325,6 +319,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: b94d50cbcdee607c531fabd564005c5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootTurret
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -583,20 +583,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Bullet
-  - hash:
-      serializedVersion: 2
-      Hash: b94d50cbcdee607c531fabd564005c5a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShootTurret
   platform: 2
   scenePathNames:
-  - Assets/Scenes/Hexagon.unity
+  - Assets/Scenes/Lvl1.unity
   playerPath: /Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty
     Tanks/Twisty Tanks.app

@@ -228,7 +228,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7509929836867087561, guid: e8439a0ad44da4c2dbb0829de7440b9d,
     type: 3}
   firePoint: {fileID: 7871261427516309398}
-  bulletSpeed: 450
+  bulletSpeed: 200
   playerCode: P2
 --- !u!1 &7871261429413862938
 GameObject:

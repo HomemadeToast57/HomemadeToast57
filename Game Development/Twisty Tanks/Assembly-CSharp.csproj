@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\TankMovement.cs" />
     <None Include="Assets\AutoSave\ReadMe.txt" />
     <None Include="Assets\GameAssets\Spritesheet\sheet_tanks.xml" />
+    <None Include="Assets\tower-defense-top-down\License.txt" />
     <None Include="Assets\GameAssets\license.txt" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.3.15f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

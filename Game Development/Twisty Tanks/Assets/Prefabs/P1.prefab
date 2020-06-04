@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: d393ff6a4dd7846fd8285a96bfb186dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -151,7 +151,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 9972ca2c73ca8409fad25cc561cd2304, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -222,7 +222,7 @@ Transform:
   m_GameObject: {fileID: 5681520820199684732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6520125, y: 1.6520125, z: 1.6520125}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 5681520819508904220}
   - {fileID: 5681520818883239012}
@@ -309,5 +309,5 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6125836218887809192, guid: 8bf4b66c553fe47808d5e7d37801da60,
     type: 3}
   firePoint: {fileID: 5681520819813404630}
-  bulletSpeed: 450
+  bulletSpeed: 200
   playerCode: P1

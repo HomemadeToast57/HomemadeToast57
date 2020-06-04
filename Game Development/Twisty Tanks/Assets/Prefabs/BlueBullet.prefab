@@ -72,9 +72,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 1d78ff93c22c042cdb601becfb22386b, type: 3}
-  m_Color: {r: 0.14117648, g: 0.6627451, b: 0.86666673, a: 1}
+  m_Color: {r: 0.18823531, g: 0.30980393, b: 0.4666667, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ca4b92eb67d4b08b38bfdd409b470f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBounces: 3
+  maxBounces: 8
 --- !u!70 &4978868660785308673
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

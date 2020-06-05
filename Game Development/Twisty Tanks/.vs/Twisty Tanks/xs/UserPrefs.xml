@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{AD94D1F9-F859-6B68-924B-066B7C688627}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShootTurret.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Bullet.cs">
     <Files>
-      <File FileName="Assets/Scripts/Bullet.cs" Line="9" Column="31" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="48" Column="6" />
       <File FileName="Assets/Scripts/TankMovement.cs" Line="19" Column="1" />
       <File FileName="Assets/MultipleTargetCamera.cs" />
-      <File FileName="Assets/Scripts/ShootTurret.cs" Line="47" Column="104" />
+      <File FileName="Assets/Scripts/ShootTurret.cs" Line="30" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

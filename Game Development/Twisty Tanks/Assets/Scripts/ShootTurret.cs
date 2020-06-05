@@ -8,11 +8,14 @@ public class ShootTurret : MonoBehaviour
     public Transform firePoint;
     public float bulletSpeed;
     public string playerCode;
+    public int timeToBulletDestruction;
+    public int maxAmmoCount;
+    private int ammoCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ammoCount = maxAmmoCount;
     }
 
     // Update is called once per frame
@@ -21,30 +24,45 @@ public class ShootTurret : MonoBehaviour
         Shoot();
     }
 
+    private void FixedUpdate()
+    {
+        
+    }
+
     void Shoot()
     {
         if(playerCode == "P1")
         {
-            if(Input.GetKeyDown(KeyCode.Comma))
+            if(ammoCount > 0 )
             {
-                GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-                rb.AddForce(firePoint.up * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
+                if (Input.GetKeyDown(KeyCode.Comma))
+                {
+                    GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+                    Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                    rb.AddForce(firePoint.up * bulletSpeed * Time.fixedDeltaTime, ForceMode2D.Impulse);
+                    Destroy(bullet, timeToBulletDestruction);
+                    ammoCount--;
+                }
             }
-           
         }
 
         if(playerCode == "P2")
         {
-            if (Input.GetKeyDown(KeyCode.V))
+            if (ammoCount > 0)
             {
-                GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-                rb.AddForce(firePoint.up * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
+                if (Input.GetKeyDown(KeyCode.V))
+                {
+                    GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+                    Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                    rb.AddForce(firePoint.up * bulletSpeed * Time.fixedDeltaTime, ForceMode2D.Impulse);
+                    Destroy(bullet, timeToBulletDestruction);
+                    ammoCount--;
+                }
             }
 
         }
 
 
     }
+
 }

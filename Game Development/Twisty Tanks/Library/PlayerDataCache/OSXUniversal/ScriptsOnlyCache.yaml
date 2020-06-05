@@ -2,11 +2,11 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bullet
+    - MultipleTargetCamera
     - ShootTurret
     - TankMovement
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
-    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -23,15 +23,17 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/Lvl1.unity:
+    Assets/Scenes/Pixel.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -46,13 +48,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 62
-      Script: {instanceID: 0}
-    - Class: 68
       Script: {instanceID: 0}
     - Class: 70
       Script: {instanceID: 0}
@@ -61,13 +59,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 584}
+      Script: {instanceID: 586}
     - Class: 114
       Script: {instanceID: 11682}
     - Class: 114
       Script: {instanceID: 12456}
     - Class: 114
       Script: {instanceID: 14252}
+    - Class: 114
+      Script: {instanceID: 22626}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -77,6 +77,8 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
       Script: {instanceID: 0}
     - Class: 156049354
       Script: {instanceID: 0}
@@ -321,7 +323,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: b94d50cbcdee607c531fabd564005c5a
+      Hash: ad93db517b0155515c9b9ea102e30d46
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShootTurret
@@ -583,8 +585,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 053c228dd9042a37224939e6fa95b47a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MultipleTargetCamera
   platform: 2
   scenePathNames:
-  - Assets/Scenes/Lvl1.unity
+  - Assets/Scenes/Pixel.unity
   playerPath: /Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty
     Tanks/Twisty Tanks.app

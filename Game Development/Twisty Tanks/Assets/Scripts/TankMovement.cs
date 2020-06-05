@@ -28,7 +28,7 @@ public class TankMovement : MonoBehaviour
         GetPlayerInput();
         if(playerCode == "P1")
         {
-            Debug.Log(Input.GetAxisRaw(playerCode + "Horizontal"));
+            //Debug.Log(Input.GetAxisRaw(playerCode + "Horizontal"));
         }
     }
 

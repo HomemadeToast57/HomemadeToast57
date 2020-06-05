@@ -9,8 +9,13 @@ public class ShootTurret : MonoBehaviour
     public float bulletSpeed;
     public string playerCode;
     public int timeToBulletDestruction;
+    
+
+    [Header("Ammo")]
     public int maxAmmoCount;
-    private int ammoCount;
+    [SerializeField] private int ammoCount;
+    [SerializeField] private float timeTillAmmoRefill;
+    [SerializeField] private float currentAmmoRefillTime;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +27,7 @@ public class ShootTurret : MonoBehaviour
     void Update()
     {
         Shoot();
+        AmmoCheck();
     }
 
     private void FixedUpdate()
@@ -64,5 +70,21 @@ public class ShootTurret : MonoBehaviour
 
 
     }
+
+    void AmmoCheck()
+    {
+        currentAmmoRefillTime += Time.deltaTime;
+
+        if (currentAmmoRefillTime >= timeTillAmmoRefill)
+        {
+            ammoCount = maxAmmoCount;
+            currentAmmoRefillTime = 0;
+        }
+    }
+
+    //public void AmmoRefill()
+    //{
+    //    ammoCount++;
+    //}
 
 }

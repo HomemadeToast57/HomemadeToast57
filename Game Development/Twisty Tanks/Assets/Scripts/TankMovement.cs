@@ -16,7 +16,6 @@ public class TankMovement : MonoBehaviour
     public GameObject turret;
     public GameObject tracks;
     public float durationOfTracks = 8f;
- 
 
     // Start is called before the first frame update
     void Start()

@@ -14,6 +14,8 @@ public class TankMovement : MonoBehaviour
     private float turretMoveDirection;
     public string playerCode;
     public GameObject turret;
+    public GameObject tracks;
+    public float durationOfTracks = 8f;
  
 
     // Start is called before the first frame update
@@ -51,6 +53,11 @@ public class TankMovement : MonoBehaviour
     {
         Vector3 directionVector = new Vector3(horizontalMoveDirection, verticalMoveDirection);
         rb.velocity = transform.up * verticalMoveDirection * moveSpeed;
+        if(rb.velocity.magnitude > 0)
+        {
+            GameObject tempTracks = Instantiate(tracks, transform.position, transform.rotation);
+            Destroy(tempTracks, durationOfTracks);
+        }
 
     }
 

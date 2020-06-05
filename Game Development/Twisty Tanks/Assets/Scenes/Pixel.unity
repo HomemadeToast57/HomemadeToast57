@@ -5931,6 +5931,12 @@ PrefabInstance:
       propertyPath: maxAmmoCount
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 500845952217019107, guid: 6e64c253715944f60b30f29dd6ca70a8,
+        type: 3}
+      propertyPath: tracks
+      value: 
+      objectReference: {fileID: 7415575122971647048, guid: cb64c6bd757bf4f859d9ffca2a52b61d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e64c253715944f60b30f29dd6ca70a8, type: 3}
 --- !u!1001 &4623815193049483050
@@ -5945,6 +5951,12 @@ PrefabInstance:
       propertyPath: maxAmmoCount
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4623815193307197521, guid: 04a4e582ddaa64665a8677ee35f77668,
+        type: 3}
+      propertyPath: tracks
+      value: 
+      objectReference: {fileID: 7415575122971647048, guid: cb64c6bd757bf4f859d9ffca2a52b61d,
+        type: 3}
     - target: {fileID: 4623815193307197522, guid: 04a4e582ddaa64665a8677ee35f77668,
         type: 3}
       propertyPath: m_Name

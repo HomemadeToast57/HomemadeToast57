@@ -35,14 +35,10 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        if(collision.collider.CompareTag("P1"))
+        if(collision.collider.CompareTag("Player"))
         {
             //Call some function of P1 damaged
-            Destroy(gameObject);
-        }
-        if (collision.collider.CompareTag("P2"))
-        {
-            //Call some function of P1 damaged
+            collision.collider.gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }

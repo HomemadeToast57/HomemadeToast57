@@ -92,12 +92,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4623815193307197523}
   - component: {fileID: 4623815193307197526}
+  - component: {fileID: 5489310533951399167}
   - component: {fileID: 4623815193307197521}
   - component: {fileID: 4623815193307197520}
-  - component: {fileID: 5489310533951399167}
+  - component: {fileID: 6101620518589220754}
   m_Layer: 0
   m_Name: CartoonTank1
-  m_TagString: P1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,42 +140,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4623815193307197521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4623815193307197522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbd1375f5a88f4553b0956008f4585cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  moveSpeed: 2.8
-  playerRotateSpeed: 3
-  turretRotateSpeed: 0
-  playerCode: P1
-  turret: {fileID: 4623815193188773135}
---- !u!114 &4623815193307197520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4623815193307197522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff9dea46986ca457186e473a91bc4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6125836218887809192, guid: 8bf4b66c553fe47808d5e7d37801da60,
-    type: 3}
-  firePoint: {fileID: 4623815193594059677}
-  bulletSpeed: 200
-  playerCode: P1
-  timeToBulletDestruction: 6
 --- !u!61 &5489310533951399167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -201,6 +166,61 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.84195936, y: 0.792572}
   m_EdgeRadius: 0
+--- !u!114 &4623815193307197521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4623815193307197522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd1375f5a88f4553b0956008f4585cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  moveSpeed: 2.8
+  playerRotateSpeed: 3
+  turretRotateSpeed: 0
+  playerCode: P1
+  turret: {fileID: 4623815193188773135}
+  tracks: {fileID: 7415575122971647048, guid: cb64c6bd757bf4f859d9ffca2a52b61d, type: 3}
+  durationOfTracks: 25
+--- !u!114 &4623815193307197520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4623815193307197522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9dea46986ca457186e473a91bc4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tankColor: blue
+--- !u!114 &6101620518589220754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4623815193307197522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed65da4507f054a13af20400a213349f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6125836218887809192, guid: 8bf4b66c553fe47808d5e7d37801da60,
+    type: 3}
+  firePoint: {fileID: 4623815193594059677}
+  bulletSpeed: 200
+  timeToBulletDestruction: 15
+  startingAmmoCount: 5
+  timeTillAmmoRefill: 20
+  currentAmmoRefillTime: 0
+  ammoLabel: {fileID: 0}
+  ammoString: 
 --- !u!1 &4623815193594059676
 GameObject:
   m_ObjectHideFlags: 0

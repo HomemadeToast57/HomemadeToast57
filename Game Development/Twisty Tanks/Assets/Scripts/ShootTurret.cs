@@ -1,33 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ShootTurret : MonoBehaviour
 {
-    public GameObject bulletPrefab;
-    public Transform firePoint;
-    public float bulletSpeed;
-    public string playerCode;
-    public int timeToBulletDestruction;
-    
-
-    [Header("Ammo")]
-    public int maxAmmoCount;
-    [SerializeField] private int ammoCount;
-    [SerializeField] private float timeTillAmmoRefill;
-    [SerializeField] private float currentAmmoRefillTime;
+    public string tankColor;
 
     // Start is called before the first frame update
     void Start()
     {
-        ammoCount = maxAmmoCount;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        Shoot();
-        AmmoCheck();
+        CheckForShooting();
     }
 
     private void FixedUpdate()
@@ -35,56 +24,25 @@ public class ShootTurret : MonoBehaviour
         
     }
 
-    void Shoot()
+    void CheckForShooting()
     {
-        if(playerCode == "P1")
+        if (tankColor == "red")
         {
-            if(ammoCount > 0 )
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                if (Input.GetKeyDown(KeyCode.Comma))
-                {
-                    GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                    Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-                    rb.AddForce(firePoint.up * bulletSpeed * Time.fixedDeltaTime, ForceMode2D.Impulse);
-                    Destroy(bullet, timeToBulletDestruction);
-                    ammoCount--;
-                }
-            }
-        }
-
-        if(playerCode == "P2")
-        {
-            if (ammoCount > 0)
-            {
-                if (Input.GetKeyDown(KeyCode.V))
-                {
-                    GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                    Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-                    rb.AddForce(firePoint.up * bulletSpeed * Time.fixedDeltaTime, ForceMode2D.Impulse);
-                    Destroy(bullet, timeToBulletDestruction);
-                    ammoCount--;
-                }
+                GetComponent<ShootingManagerTank>().Shoot();
             }
 
         }
 
-
-    }
-
-    void AmmoCheck()
-    {
-        currentAmmoRefillTime += Time.deltaTime;
-
-        if (currentAmmoRefillTime >= timeTillAmmoRefill)
+        if(tankColor == "blue")
         {
-            ammoCount = maxAmmoCount;
-            currentAmmoRefillTime = 0;
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                GetComponent<ShootingManagerTank>().Shoot();
+            }
         }
+        
     }
-
-    //public void AmmoRefill()
-    //{
-    //    ammoCount++;
-    //}
 
 }

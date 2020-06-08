@@ -63,9 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MultipleTargetCamera.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\MultipleTargetCamera.cs" />
     <Compile Include="Assets\Scripts\ShootTurret.cs" />
+    <Compile Include="Assets\Scripts\ShootingManagerTank.cs" />
     <Compile Include="Assets\Scripts\TankMovement.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />

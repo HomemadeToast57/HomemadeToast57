@@ -7,8 +7,15 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     public int maxBounces;
     private int currentBounce;
+    public GameObject gameManager;
+    public GameObject explosionPrefab;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        gameManager = GameObject.Find("GameManager");
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,7 +25,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        CheckInPlay();  
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -35,11 +42,27 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        if(collision.collider.CompareTag("Player"))
+        if(collision.collider.CompareTag("P1") || collision.collider.CompareTag("P2"))
         {
-            //Call some function of P1 damaged
             collision.collider.gameObject.SetActive(false);
+            gameManager.GetComponent<GameManager>().RoundOver(collision.collider.tag);
+            GameObject explosion = Instantiate(explosionPrefab);
+
+            //Match pos and rot of tank to the explosion
+            explosion.transform.position = collision.collider.gameObject.transform.position;
+            explosion.transform.rotation = collision.collider.gameObject.transform.rotation;
+
+            Destroy(explosion, 1);
+            Destroy(gameObject);
+        }
+    }
+
+    public void CheckInPlay()
+    {
+        if (gameManager.GetComponent<GameManager>().GetInPlayBool() == false)
+        {
             Destroy(gameObject);
         }
     }
 }
+

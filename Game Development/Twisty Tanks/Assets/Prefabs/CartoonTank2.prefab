@@ -206,9 +206,10 @@ GameObject:
   - component: {fileID: 500845952217019107}
   - component: {fileID: 500845952217019106}
   - component: {fileID: 789740780004369997}
+  - component: {fileID: 1283812786}
   m_Layer: 0
   m_Name: CartoonTank2
-  m_TagString: P2
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,6 +269,8 @@ MonoBehaviour:
   turretRotateSpeed: 0
   playerCode: P2
   turret: {fileID: 500845952067006397}
+  tracks: {fileID: 7415575122971647048, guid: cb64c6bd757bf4f859d9ffca2a52b61d, type: 3}
+  durationOfTracks: 25
 --- !u!114 &500845952217019106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,12 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9dea46986ca457186e473a91bc4f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7509929836867087561, guid: e8439a0ad44da4c2dbb0829de7440b9d,
-    type: 3}
-  firePoint: {fileID: 500845951931193647}
-  bulletSpeed: 200
-  playerCode: P2
-  timeToBulletDestruction: 6
+  tankColor: red
 --- !u!61 &789740780004369997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -312,3 +310,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.84195936, y: 0.792572}
   m_EdgeRadius: 0
+--- !u!114 &1283812786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500845952217019104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed65da4507f054a13af20400a213349f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7509929836867087561, guid: e8439a0ad44da4c2dbb0829de7440b9d,
+    type: 3}
+  firePoint: {fileID: 500845951931193647}
+  bulletSpeed: 200
+  timeToBulletDestruction: 15
+  startingAmmoCount: 5
+  timeTillAmmoRefill: 20
+  currentAmmoRefillTime: 0
+  ammoLabel: {fileID: 0}
+  ammoString: 

@@ -268,6 +268,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
@@ -637,6 +640,9 @@
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -646,8 +652,17 @@
     <Reference Include="Unity.2D.PixelPerfect.Editor">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
@@ -657,6 +672,12 @@
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -675,6 +696,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
@@ -703,8 +727,14 @@
     <Reference Include="Unity.2D.Animation.Editor">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/jacobsinger/Documents/GitHub/HomemadeToast/Game Development/Twisty Tanks/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

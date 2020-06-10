@@ -85,15 +85,16 @@ public class GameManager : MonoBehaviour
         redScore.text = redScoreValue.ToString();
     }
 
-    void GameOver()
+    public void GameOver()
     {
         //Handle end of game here
         PlayerPrefs.SetInt("blueScore", 0);
         PlayerPrefs.SetInt("redScore", 0);
     }
 
-    void ResetGame()
+    public void ResetGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

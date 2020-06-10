@@ -16,12 +16,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int redScoreValue;
 
     public bool inPlay;
+
+    public CameraShakeController cameraShakeController;
     
 
 
     // Start is called before the first frame update
     void Start()
     {
+        cameraShakeController = GameObject.Find("Main Camera").GetComponent<CameraShakeController>();
+        cameraShakeController.ShakeCam(false);
+
        inPlay = true;
        if(PlayerPrefs.GetInt("redScore") == winningScore || PlayerPrefs.GetInt("blueScore") == winningScore)
         {

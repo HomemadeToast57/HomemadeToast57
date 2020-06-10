@@ -10,6 +10,9 @@ public class Bullet : MonoBehaviour
     public GameObject gameManager;
     public GameObject explosionPrefab;
 
+    //Cam Shake
+    public CameraShakeController cameraShakeController;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -20,6 +23,10 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         currentBounce = 0;
+
+        //find CameraShakeController script
+        cameraShakeController = GameObject.Find("Main Camera").GetComponent<CameraShakeController>();
+        
     }
 
     // Update is called once per frame
@@ -51,6 +58,9 @@ public class Bullet : MonoBehaviour
             //Match pos and rot of tank to the explosion
             explosion.transform.position = collision.collider.gameObject.transform.position;
             explosion.transform.rotation = collision.collider.gameObject.transform.rotation;
+
+            //shake camera
+            cameraShakeController.ShakeCam(true);
 
             Destroy(explosion, 1);
             Destroy(gameObject);

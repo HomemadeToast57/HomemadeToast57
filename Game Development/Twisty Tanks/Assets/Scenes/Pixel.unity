@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -585,6 +585,8 @@ GameObject:
   - component: {fileID: 573184652}
   - component: {fileID: 573184653}
   - component: {fileID: 573184654}
+  - component: {fileID: 573184655}
+  - component: {fileID: 573184656}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -725,6 +727,35 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 544d22b2cd3124ed1af7982ea79765ed, type: 2}
+--- !u!114 &573184655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573184648}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1477cc4b51794bb5aabb95b050f5f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 0}
+  shakeDuration: 0
+  shakeAmount: 0.7
+  decreaseFactor: 1
+--- !u!114 &573184656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573184648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c376898905d7b417a865ac5e8e3799c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shake: {fileID: 0}
 --- !u!1 &688261455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +3944,7 @@ MonoBehaviour:
   blueScoreValue: 0
   redScoreValue: 0
   inPlay: 0
+  cameraShakeController: {fileID: 0}
 --- !u!4 &1649499550
 Transform:
   m_ObjectHideFlags: 0

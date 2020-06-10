@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bullet
+    - CameraShakeController
+    - CameraShaker
     - GameManager
     - MultipleTargetCamera
     - ShootTurret
@@ -249,6 +251,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16176}
     - Class: 114
       Script: {instanceID: 16182}
+    - Class: 114
+      Script: {instanceID: 18778}
+    - Class: 114
+      Script: {instanceID: 19388}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -464,7 +470,7 @@ ScriptsOnlyBuild:
     className: ColorCurves
   - hash:
       serializedVersion: 2
-      Hash: fe05b8e82a9e8605889b8c5cdc7a08d8
+      Hash: 4b7fa70e1943e25d000e35df04db71c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bullet
@@ -932,7 +938,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerVector2
   - hash:
       serializedVersion: 2
-      Hash: 34a37ea7d31b38cefc34265387e343cd
+      Hash: 764168eaa025102e600f5801c35cdd85
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1170,6 +1176,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c58ff49b90d2c97813137837a05aa8bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraShaker
+  - hash:
+      serializedVersion: 2
+      Hash: 3b74b20cae062e32f4697152a533f7ad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraShakeController
   platform: 2
   scenePathNames:
   - Assets/Scenes/Pixel.unity

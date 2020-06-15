@@ -9,7 +9,7 @@
       <File FileName="Assets/Scripts/Bullet.cs" Line="63" Column="48" />
       <File FileName="Assets/PauseManagerScript.cs" Line="39" Column="28" />
       <File FileName="Assets/MainMenuManagerScript.cs" Line="13" Column="18" />
-      <File FileName="Assets/RotateScript.cs" Line="8" Column="14" />
+      <File FileName="Assets/RotateScript.cs" Line="22" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

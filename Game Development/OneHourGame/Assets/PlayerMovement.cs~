@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+
+    public Rigidbody2D rb;
+    public float horizontalInput;
+    public float moveSpeed;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>(); 
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        GetPlayerInput(); 
+    }
+
+    void GetPlayerInput()
+    {
+        horizontalInput = Input.GetAxis("Horizontal");
+    }
+
+    void Movement()
+    {
+        transform.position += new Vector3(horizontalInput * moveSpeed * Time.deltaTime, 0, 0);
+    }
+}

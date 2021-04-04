@@ -1,3 +1,5 @@
+![alt text](https://github.com/HomemadeToast57/HomemadeToast/blob/master/Assets/README.gif?raw=true)
+
 ### Hey 👋
 
 ### Who am I?

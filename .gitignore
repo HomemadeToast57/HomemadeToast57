@@ -10,8 +10,10 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
-# Remove DS_Store
+# General
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data

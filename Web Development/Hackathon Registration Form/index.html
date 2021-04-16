@@ -1,0 +1,109 @@
+<!--Jacob Singer 2021-->
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Form</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+
+</head>
+
+<body>
+
+    <div id="title-div">
+        <h1 id="title">Hackathon Registration Form </h1>
+        <p id="description">Sign up to compete in our annual competition.</p>
+    </div>
+
+    <div id="form">
+        <form id="survey-form" action="">
+
+            <div id="name-group" class="input-group">
+                <label id="name-label" class="input-title" for="name">Name</label>
+                <input class="field" type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div id="email-group" class="input-group">
+                <label id="email-label" class="input-title" for="email">Email</label>
+                <input class="field" type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div id="age-group" class="input-group">
+                <label id="number-label" class="input-title" for="number">Age (Optional)</label>
+                <input class="field" type="number" name="age" id="number" min="16" max="99" placeholder="Age">
+            </div>
+
+            <div id="current-year-group" class="input-group">
+                <label id="current-year-label" class="input-title" for="current-year">Current Year of Study</label>
+                <select id="dropdown" name="current-year" id="dropdown">
+                    <option value="freshman">Freshman</option>
+                    <option value="sophomore">Sophomore</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+
+                <label id="team-preference-label" class="input-title" for="team-preference">Team Assignment</label>
+
+                <label><input name="team-preference" value="pre-organized" type="radio" class="input-checkbox"
+                        required />Competing with pre-organized
+                    team</label>
+                <label>
+                    <input name="team-preference" value="need" type="radio" class="input-checkbox" />In need of
+                    assignment to team</label>
+            </div>
+
+            <div class="input-group" required>
+
+                <label id="session-pick-label" class="input-title" for="session-pick">Select Which Events You Plan To
+                    Attend</label>
+
+                <label><input name="session-pick" value="welcome" type="checkbox" class="input-checkbox"
+                         />Welcome ceremony</label>
+                <label>
+                    <input name="session-pick" value="job" type="checkbox" class="input-checkbox" />Job fair</label>
+                <label>
+                    <input name="session-pick" value="carnival" type="checkbox"
+                        class="input-checkbox" />Carnival</label>
+                <label>
+                    <input name="session-pick" value="judge" type="checkbox" class="input-checkbox" />Judging
+                    period</label>
+
+                <label>
+                    <input name="session-pick" value="award" type="checkbox" class="input-checkbox" />Award
+                    Ceremony</label>
+
+            </div>
+
+            <div class="input-group">
+
+                <label id="questions-label" class="input-title" for="questions-field">Any Questions or Comments?</label>
+                <textarea id="comments" class="field" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+
+
+            </div>
+
+            <div class="input-group">
+
+                <button id="submit" type="submit" class="field">Submit</button>
+
+
+            </div>
+
+
+
+
+        </form>
+    </div>
+
+
+</body>
+
+
+</html>

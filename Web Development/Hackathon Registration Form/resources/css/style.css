@@ -1,0 +1,108 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+  }
+
+html {
+    color: rgb(253, 253, 253);
+    font-family: Lobster;
+    background-color: #c0c0c0;
+}
+
+#title-div {
+    text-align: center;
+}
+
+#title {
+    font-weight:400;
+    font-size: 16px;
+    font-size: 5vw;
+}
+
+#description {
+    font-style: italic;
+    font-size: 10px;
+    font-size: 2vw;
+}
+
+#form {
+    background-color: #93abb3;
+    border-radius: 1rem;
+    margin: auto 100px;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.field {
+    background-color: white;
+    border-radius: .2rem;
+    height: 20px;
+    border: 0px none;
+    width: 100%;
+    color: #000000;
+    padding-left: 4px;
+}
+
+.input-title {
+    font-weight: 400;
+    font-size: larger;
+}
+
+#submit {
+    margin-top: 1rem;
+    
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+#name-group {
+ padding-bottom: 0 !important;
+}
+
+.input-group {
+    padding: 2rem 4rem 0rem 4rem;
+}
+
+#dropdown {
+    background-color: white;
+    border-radius: .2rem;
+    height: 20px;
+    border: 0px none;
+    width: 100%;
+    color: #000000;
+    padding-left: 4px;
+
+}
+
+.image-container {
+    
+    text-align: center;
+    display: block;
+}
+
+#image {
+    max-width: 20%;
+    height: auto;
+}
+
+#button-label {
+    text-align: center;
+    align-items: center;
+}
+
+#submit {
+    height: 2em;
+}
+p {margin-top:0em}
+h1{margin-bottom:0em}

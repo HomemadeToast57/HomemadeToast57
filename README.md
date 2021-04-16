@@ -10,5 +10,3 @@ I'm available on all of these platforms down below ⤵️
 + Twitter: [@HomemadeToast57](https://twitter.com/homemadetoast57)
 + Discord: [#HomemadeToast#0374](https://discord.com/)
 + Email: [jacobsinger22@gmail.com](mailto:jacobsinger22@gmail.com)
-
-![My's GitHub Stats](https://github-readme-stats.vercel.app/api?username=homemadetoast57&show_icons=true&theme=tokyonight)

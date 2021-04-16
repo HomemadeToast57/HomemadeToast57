@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+#header {
+    display: grid;
+    grid-template-columns: 12;
+    padding-top: 10px;
+}
+
+#home-link {
+    text-decoration: none;
+    color: #333;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    grid-column: 1/5;
+    margin-left: 15px;
+}
+
+#header-img {
+    max-width: 100px;
+    height: auto;
+}
+
+#title {
+    font-size: 40px;
+}
+
+#nav-bar {
+   grid-column: 7/11;
+   align-self: center;
+   justify-self: end;
+   margin-right: 20px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0px 0px 0px auto;
+   justify-content:flex-end;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    padding: 1vw;
+    
+    
+}
+
+body {
+    font-family: Fredoka One, sans-serif;
+    color: #333;
+}
+
+@media (max-width: 608px) {
+    /* .nav-link {
+      font-size: 12px;
+    } */
+    #logo {
+        zoom: 80%;
+        -moz-transform: scale(0.5);
+        }
+  }
+
+  @media (max-width: 742px) {
+    #nav-bar {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }

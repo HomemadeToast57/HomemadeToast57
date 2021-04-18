@@ -11,6 +11,7 @@
     grid-template-columns: 12;
     padding-top: 10px;
     padding-bottom: 30px;
+    font-family: Fredoka One, sans-serif;
 }
 
 #home-link {
@@ -23,7 +24,7 @@
     align-items: center;
     justify-content: flex-start;
     grid-column: 1/5;
-    margin-left: -11px;
+    margin-left: 15px;
 }
 
 #header-img {
@@ -57,9 +58,7 @@
 }
 
 body {
-    font-family: Fredoka One, sans-serif;
-    color: #333;
-    margin-left: 20px;
+
 }
 
 @media (max-width: 608px) {
@@ -77,4 +76,30 @@ body {
       flex-direction: column;
       align-items: flex-end;
     }
+  }
+
+  #content {
+    font-family: Noto Sans JP, sans-serif;
+  }
+  #video-module {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  #iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-head {
+    margin: 20px 30px 40px 30px
   }

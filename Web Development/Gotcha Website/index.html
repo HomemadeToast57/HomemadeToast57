@@ -21,8 +21,8 @@
     <nav id="nav-bar">
 
         <a class="nav-link" href="#how-it-works">How it Works</a>
-        <a class="nav-link" href="">Campuses</a>
-        <a class="nav-link" href="">Contact Us</a>
+        <a class="nav-link" href="#campuses">Campuses</a>
+        <a class="nav-link" href="#contact-us">Contact Us</a>
 
     </nav>
 
@@ -30,29 +30,56 @@
 
 <body>
     <div id="content">
-        <section id="how-it-works">
+        <section id="how-it-works" class="section">
             <div class="section-head">
-                <h2>How does Gotcha! work?</h2>
+                <h2>How Does Gotcha! Work?</h2>
             </div>
             
             <div id="video-module">
                 <div id="iframe-container">
                     <iframe id="video" height="315"
-                        src="https://www.youtube-nocookie.com/embed/NpEaa2P7qZI?rel=0&amp;controls=0&amp;showinfo=0"
+                        src="https://www.youtube-nocookie.com/embed/CxwJrzEdw1U?rel=0&amp;controls=1&amp;showinfo=0"
                         frameborder="0" allowfullscreen></iframe>
 
                 </div>
             </div>
         </section>
-        <section id="campuses">
+        <section id="campuses" class="section">
             <div class="section-head">
-                <h2>Jack</h2>
+                <h2>Campuses We Are On: </h2>
             </div>
+
+            <div class="section-body">
+                <ul>
+                    <li>SUNY Binghamton University</li>
+                    <li>Michigan University</li>
+                    <li>Columbia University</li>
+                </ul>
+
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <p id="request-school">Request your School!</p>
+                    <input type="text" name="" style="border-radius: 8px;" id="request-school" placeholder="School">
+                    <input type="email" id="email" name="" placeholder="Email" style="border-radius: 8px;">
+                    <input type="submit" value="Submit" id="submit" action="https://www.freecodecamp.com/email-submit">
+                </form>
+
+            </div>
+
+        </section>
+        <section id="contact-us" class="section">
+            <div class="section-head">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="contact-body">
+                <p id="contact-text">Reach Me @HomemadeToast57 on Twitter or HomemadeToast57 on GitHub.</p>
+            </div>
+            
         </section>
     </div>
 
 </body>
 
-</html>
 
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<footer>© Jacob Singer | HomemadeToast57 | 2021</footer>
+</html>

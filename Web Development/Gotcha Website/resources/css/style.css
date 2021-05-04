@@ -14,6 +14,8 @@
     font-family: Fredoka One, sans-serif;
 }
 
+
+
 #home-link {
     text-decoration: none;
     color: #333;
@@ -57,8 +59,55 @@
     
 }
 
-body {
+#contact-text {
+  text-align: left;
+  margin-left: 60px;
+}
 
+#request-school {
+  font-size: 110%;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  margin: 10px;
+}
+
+#email {
+  font-size: 110%;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  margin: 10px;
+}
+
+#form {
+  justify-content: center;
+  align-items: center;
+  padding: 40px;;
+  /* background-color: rgb(161, 161, 161); */
+  /* color: rgb(37, 37, 37); */
+  border-radius: 12px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  padding: 40px;;
+  /* background-color: rgb(161, 161, 161); */
+  /* color: rgb(37, 37, 37); */
+  border-radius: 12px;
+}
+
+#submit {
+  padding: 4px;
+  border-radius: 8px;
 }
 
 @media (max-width: 608px) {
@@ -102,4 +151,14 @@ body {
 
   .section-head {
     margin: 20px 30px 40px 30px
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    align-items: center;
+    text-align: center; 
+    font-family: Noto Sans JP, sans-serif;
   }

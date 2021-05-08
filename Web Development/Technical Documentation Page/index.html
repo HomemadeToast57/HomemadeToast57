@@ -11,11 +11,11 @@
     
 
 <nav id="navbar">
-    <header id="title">JavaScript Documentation</header>
+    <header id="title">JavaScript</header>
 
     <div id="nav-links">
     <a class="nav-link" href="#Introduction">Introduction</a>
-    <a class="nav-link" href="#What_should_you_know_already?">What should you know already</a>
+    <a class="nav-link" href="#What_should_you_know_already?">What should you know already?</a>
     <a class="nav-link" href="#Writing_Hello_World">Writing Hello World</a>
     <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a>
     <a class="nav-link" href="#Data_Types">Data Types</a>
@@ -29,7 +29,7 @@
         <header>Introduction</header>
         <article>
             <p>
-                JavaScript is a cross-platform, object-oriented scripting language. It
+                <b>JavaScript</b> is a cross-platform, object-oriented scripting language. It
                 is a small and lightweight language. Inside a host environment (for
                 example, a web browser), JavaScript can be connected to the objects of
                 its environment to provide programmatic control over them.
@@ -66,18 +66,17 @@
     <section id="What_should_you_know_already?" class="main-section">
         <header>What should you know already?</header>
         <article>
-            <p>This guide assumes you have the following basic background:</p>
+            <p class="subtitle">This guide assumes you have the following knowledge:</p>
 
             <ul>
                 <li>
-                    <p>A general understanding of the Internet and the World Wide Web (WWW).</p>
+                    <p>A basic understanding of the Internet and the World Wide Web (WWW).</p>
                 </li>
                 <li>
-                    <p>Good working knowledge of HyperText Markup Language (HTML).</p>
+                    <p>Knowledge of HyperText Markup Language (HTML).</p>
                 </li>
                 <li>
-                    <p>Some programming experience. If you are new to programming, try one of
-                        the tutorials linked on the main page about JavaScript.</p>
+                    <p>Some prior programming experience.</p>
                 </li>
             </ul>
         </article>
@@ -87,18 +86,18 @@
         <header>Writing Hello World</header>
         <article>
             <p>
-                To get started with writing JavaScript, open the Scratchpad and write your
-                first "Hello world" JavaScript code: </p>
+                To begin, first open the Scratchpad and write your
+                first "Hello World" JavaScript code: </p>
             <div class="code-block">
                 <code>
-                    function greetMe(yourName) { <br> alert("Hello " + yourName); <br> }
+                    function greet(name) { <br> alert("Hello " + name); <br> }
                         <br>
-                    greetMe("World");
+                    greet("World");
                     <br>
             </code>
             </div>
             <p>
-                Select the code in the pad and hit Ctrl+R to watch it unfold in your
+                Select the code in Scratchpad and press Ctrl+R to watch it run in your
                 browser!
             </p>
         </article>
@@ -107,27 +106,26 @@
     <section id="Declaring_Variables" class="main-section">
         <header>Declaring Variables</header>
         <article>
-            <p>You can declare a variable in three ways: </p>
+            <p class="subtitle">You can declare a variable in three different ways: </p>
             <ol>
                 <li>
                     <p>
-                        With the keyword var. For example, <code>var x = 42</code>. This syntax
+                        With the keyword var. For example, <code>var x = 37</code>. This syntax
                         can be used to declare both local and global variables.
                     </p>
                 </li>
                 <li>
                     <p>
-                        By simply giving a variable a value. For example, <code>x = 42.</code> This
+                        By simply giving a variable a value. For example, <code>x = 37</code>. This
                         always declares a global variable. It generates a strict JavaScript
                         warning. You shouldn't use this variant.
                     </p>
                 </li>
                 <li>
                     <p>
-                        With the keyword let. For example, <code>let y = 13</code> or <code>y = (10*2)</code>. This
+                        With the keyword let. For example, <code>let j = 22</code> or <code>t = (10*2)</code>. This
                         syntax
-                        can be used to declare a block scope local variable. See Variable scope
-                        below.
+                        can be used to declare a block scope local variable.
                     </p>
                 </li>
             </ol>
@@ -137,10 +135,10 @@
     <section id="Data_Types" class="main-section">
         <header>Data Types</header>
         <article>
-            <p>The latest ECMAScript standard defines seven data types:</p>
+            <p class="subtitle">The latest standard defines seven data types:</p>
             <ul>
                 <li>
-                    <p>Six data types that are primitives:</p>
+                    <p>Six data types that are primitive types:</p>
                     <ul>
                         <li>Boolean. true and false.</li>
                         <li>
@@ -150,22 +148,22 @@
                         </li>
                         <li>undefined. A top-level property whose value is undefined.</li>
                         <li>Number. 42 or 3.14159.</li>
-                        <li>String. "Howdy"</li>
+                        <li>String. "Hello!"</li>
                         <li>
-                            Symbol (new in ECMAScript 2015). A data type whose instances are
+                            Symbol (new in 2015). A data type whose instances are
                             unique and immutable.
                         </li>
                     </ul>
                 </li>
 
                 <li>
-                    <p>and Object</p>
+                    <p>and Object.</p>
 
                 </li>
             </ul>
             <p>
-            Although these data types are a relatively small amount, they enable you
-            to perform useful functions with your applications. Objects and functions
+            Although there are not many types, they still enable you
+            to perform useful functions within your applications. Objects and functions
             are the other fundamental elements in the language. You can think of
             objects as named containers for values, and functions as procedures that
             your application can perform.
@@ -182,6 +180,9 @@
         </p>
     </section>
 
+    <footer>© Jacob Singer | <a href="https://github.com/HomemadeToast57" target="_blank">HomemadeToast57</a></footer>
 </main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 
 </html>

@@ -16,10 +16,22 @@
     margin-top: 20px;
 }
 
+footer {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-left:0;
+    margin-bottom: 10px;
+}
+
 header {
     font-size: 25px;
     font-family: 'Roboto';
     font-weight: 500;
+}
+
+.subtitle {
+    font-weight:500;
 }
 
 p {
@@ -39,7 +51,7 @@ code {
     border-radius: 6px;
 }
 
-ul {
+ul, footer {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -81,9 +93,15 @@ ul {
         width: 100%;
         max-height: 0px;
     }
+    footer {
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        margin-left:0;
+    }
     #main-doc {
         position: relative;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-top: 340px;
     }
     
@@ -93,5 +111,7 @@ ul {
         margin-bottom: 20px;
         font-size: 30px;
     }
+
+    
 }
 

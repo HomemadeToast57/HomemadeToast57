@@ -8,11 +8,10 @@
 
 #import "SDWebImageCompat.h"
 
-@interface UIColor (HexString)
+#if !__has_feature(objc_arc)
+    #error SDWebImage is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
+#endif
 
-/**
- Convenience way to get hex string from color. The output should always be 32-bit RGBA hex string like `#00000000`.
- */
-@property (nonatomic, copy, readonly, nonnull) NSString *sd_hexString;
-
-@end
+#if !OS_OBJECT_USE_OBJC
+    #error SDWebImage need ARC for dispatch object
+#endif

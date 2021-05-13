@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+@_exported import SDWebImage // Automatically import SDWebImage
 
 #if os(macOS)
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
@@ -16,17 +17,6 @@ public typealias PlatformImage = NSImage
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public typealias PlatformImage = UIImage
 #endif
-
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-extension Image {
-    init(platformImage: PlatformImage) {
-        #if os(macOS)
-        self.init(nsImage: platformImage)
-        #else
-        self.init(uiImage: platformImage)
-        #endif
-    }
-}
 
 #if os(macOS)
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
@@ -52,4 +42,23 @@ public typealias PlatformViewRepresentable = UIViewRepresentable
 #if os(watchOS)
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public typealias PlatformViewRepresentable = WKInterfaceObjectRepresentable
+#endif
+
+#if os(macOS)
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+extension NSViewRepresentable {
+    typealias PlatformViewType = NSViewType
+}
+#endif
+#if os(iOS) || os(tvOS)
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+extension UIViewRepresentable {
+    typealias PlatformViewType = UIViewType
+}
+#endif
+#if os(watchOS)
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+extension WKInterfaceObjectRepresentable {
+    typealias PlatformViewType = WKInterfaceObjectType
+}
 #endif

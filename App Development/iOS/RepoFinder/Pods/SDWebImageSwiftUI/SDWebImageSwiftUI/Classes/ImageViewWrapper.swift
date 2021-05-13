@@ -17,6 +17,7 @@ public class AnimatedImageViewWrapper : PlatformView {
     var wrapped = SDAnimatedImageView()
     var interpolationQuality = CGInterpolationQuality.default
     var shouldAntialias = false
+    var resizable = false
     
     override public func draw(_ rect: CGRect) {
         #if os(macOS)
@@ -45,15 +46,12 @@ public class AnimatedImageViewWrapper : PlatformView {
     #endif
     
     public override var intrinsicContentSize: CGSize {
-        /// Used to fix SwiftUI layout issue when image view is aspectFit/aspectFill :)
-        /// The container will measure its own size with 1:1 firstly, then change image view size, which cause image view sizing smaller than expected
-        /// Instead, the container should firstly return its own size with image view's aspect ratio
-        let size = wrapped.intrinsicContentSize
-        if size.width > 0 && size.height > 0  {
-            let aspectRatio = size.height / size.width
-            return CGSize(width: 1, height: 1 * aspectRatio)
-        } else {
+        /// Match the behavior of SwiftUI.Image, only when image is resizable, use the super implementation to calculate size
+        if resizable {
             return super.intrinsicContentSize
+        } else {
+            /// Not resizable, always use image size, like SwiftUI.Image
+            return wrapped.intrinsicContentSize
         }
     }
     
@@ -65,31 +63,6 @@ public class AnimatedImageViewWrapper : PlatformView {
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubview(wrapped)
-    }
-}
-
-
-/// Store the Animated Image loading state, to avoid re-query duinrg `updateView(_:)` until Source of Truth changes
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-extension PlatformView {
-    static private var sd_imageNameKey: Void?
-    static private var sd_imageDataKey: Void?
-    
-    var sd_imageName: String? {
-        get {
-            objc_getAssociatedObject(self, &PlatformView.sd_imageNameKey) as? String
-        }
-        set {
-            objc_setAssociatedObject(self, &PlatformView.sd_imageNameKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-    }
-    var sd_imageData: Data? {
-        get {
-            objc_getAssociatedObject(self, &PlatformView.sd_imageDataKey) as? Data
-        }
-        set {
-            objc_setAssociatedObject(self, &PlatformView.sd_imageDataKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
     }
 }
 
@@ -122,6 +95,38 @@ public class ProgressIndicatorWrapper : PlatformView {
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubview(wrapped)
+    }
+}
+
+@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+extension PlatformView {
+    /// Adds constraints to this `UIView` instances `superview` object to make sure this always has the same size as the superview.
+    /// Please note that this has no effect if its `superview` is `nil` – add this `UIView` instance as a subview before calling this.
+    func bindFrameToSuperviewBounds() {
+        guard let superview = self.superview else {
+            print("Error! `superview` was nil – call `addSubview(view: UIView)` before calling `bindFrameToSuperviewBounds()` to fix this.")
+            return
+        }
+
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.topAnchor.constraint(equalTo: superview.topAnchor, constant: 0).isActive = true
+        self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: 0).isActive = true
+        self.leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: 0).isActive = true
+        self.trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: 0).isActive = true
+    }
+    
+    /// Finding the HostingView for UIKit/AppKit View.
+    /// - Parameter entry: The entry platform view
+    /// - Returns: The hosting view.
+    func findHostingView() -> PlatformView? {
+        var superview = self.superview
+        while let s = superview {
+            if NSStringFromClass(type(of: s)).contains("HostingView") {
+                return s
+            }
+            superview = s.superview
+        }
+        return nil
     }
 }
 

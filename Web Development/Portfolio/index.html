@@ -8,23 +8,73 @@
     <link rel="stylesheet" href="resources/css/style.css">
     <title>Portfolio</title>
 </head>
-    
 
-<nav id="navbar">
-    
+
+<nav id="navbar" class="nav">
+    <ul class="nav-list">
+        <li class="nav-list-item">
+            <a href="#welcome-section">About</a>
+        </li>
+        <li class="nav-list-item">
+            <a href="#projects">Work</a>
+        </li>
+        <li class="nav-list-item">
+            <a href="#about">Contact</a>
+        </li>
+    </ul>
 </nav>
 
 <main id="main-doc">
 
-    <section id="welcome-section">
-        <h1>Hey I am Jacob</h1>
-        <p>A Software Developer</p>
+    <section id="welcome-section" class="welcome-section">
+        <div id="welcome-text">
+            <h1>Hey I am <br> Jacob</h1>
+            <p id="description">a software developer</p>
+        </div>
+        <div id="welcome-image">
+            <img id="prof-pic" src="https://avatars.githubusercontent.com/u/54961512?v=4" alt="">
+        </div>
     </section>
 
-    <section id="projects">
-        
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">Here is some of my work:</h2>
+
+        <div class="projects-grid">
+            <a href="" target="_blank" class="project-tile">
+                <img class="project-image" src="" alt="">
+                <p class="project-title">Tribute Page</p>
+            </a>
+
+            <a href="" target="_blank" class="project-tile">
+                <img class="project-image" src="" alt="">
+                <p class="project-title">Product Page</p>
+            </a>
+
+            <a href="" target="_blank" class="project-tile">
+                <img class="project-image" src="" alt="">
+                <p class="project-title">Registration Form</p>
+            </a>
+
+            <a href="" target="_blank" class="project-tile">
+                <img class="project-image" src="" alt="">
+                <p class="project-title">Technical Documentation Page</p>
+            </a>
+        </div>
     </section>
-    
+
+    <section id="about" class="about-section">
+        <p>Reach me here:</p>
+        <div class="contact-links">
+
+            <a class="contact-link" id="profile-link" href="https://github.com/HomemadeToast57" target="_blank">
+
+                <img class="contact-icon" id="github" src="images/github1.png" alt="">
+
+            </a>
+
+
+        </div>
+    </section>
 
 </main>
 

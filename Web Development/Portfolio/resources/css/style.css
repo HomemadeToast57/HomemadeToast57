@@ -1,0 +1,128 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*  */
+
+/* Custom properties/variables  */
+
+:root {
+    --main-white: #f0f0f0;
+}
+
+/*  */
+
+/* Base reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+/*  */
+
+/* box-sizing and font sizing */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* General */
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/*  */
+
+#main-doc {
+    /* margin-top: 100px; */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 0 rgba(242, 245, 254, 1);
+    z-index: 10;
+}
+
+#navbar {
+    font-size: 25px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list-item, .nav-list-item:visited {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+.welcome-section {
+    margin:0px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  height: 100vh;
+  align-items: center;  
+}
+
+#welcome-text {
+
+    align-self: center;
+    justify-self: center;
+    padding-right: 3px;
+}
+
+#welcome-image {
+    padding-left: 30px;
+    border-radius: 50%;
+}
+
+#prof-pic {
+    border-radius: 5%;
+}
+
+h1 {
+    font-size: 100px;
+    word-spacing: -30px;
+}
+
+#description {
+font-size: 25px;
+}
+
+#github {
+    width: 20px;
+    height: 20px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 970px) {
+    #main-doc {
+        margin-top: 30px;
+    }
+
+    #welcome-text {
+        padding: 12.5px 25px 0px 25px;
+        margin-top: 80px;
+    }
+    
+    #welcome-image {
+        margin-bottom: 80px;
+        padding-left: 0;
+
+    }
+}
+
+/*  */

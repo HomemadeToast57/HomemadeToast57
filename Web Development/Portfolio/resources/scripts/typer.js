@@ -2,21 +2,21 @@ var cursor = true;
         var speed = 250;
         
         
-        
-        
         setInterval(() => {
-          if(cursor) {
-            document.getElementById('cursor').style.opacity = 0;
-            cursor = false;
-          }else {
-            document.getElementById('cursor').style.opacity = 1;
-            cursor = true;
-          }
-        }, speed);
+            if(cursor) {
+              document.getElementById('cursor').style.opacity = 0;
+              cursor = false;
+            }else {
+              document.getElementById('cursor').style.opacity = 1;
+              cursor = true;
+            }
+          }, speed);
+        
+        
 
 
         var i = 0;
-        var txt = "Hey I am\nJacob";
+        var txt = "Hey I am\nJacob.";
         
         var speed = 50;
         function typeWriter() {

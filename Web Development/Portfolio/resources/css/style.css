@@ -7,6 +7,7 @@
 
 :root {
     --main-white: #f0f0f0;
+    --main-black: #000000;
 }
 
 /*  */
@@ -25,13 +26,31 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
+@media only screen and (max-width: 1215px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 10px;
+    }
+}
 /* General */
 
 a, a:visited {
     text-decoration: none;
-    color: black;
+    color: var(--main-black);
 }
 
 /*  */
@@ -44,14 +63,14 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: white;
     box-shadow: 0 3px 0 rgba(242, 245, 254, 1);
     z-index: 10;
 }
 
 #navbar {
-    font-size: 25px;
+    font-size: 1.4rem;
 }
 
 .nav-list {
@@ -71,6 +90,8 @@ nav {
     justify-content: center;
     height: 100vh;
     align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .welcome-holder {
@@ -82,98 +103,60 @@ nav {
     justify-content: center;
     width: 90%;
     height: 80%;
-    margin-top: 115px;
+    padding-top: 115px;
     flex: 10;
+    min-height: 00;
 }
 
 #welcome-text {
-    width: 50%;
+    width: fit-content;
     justify-self: center;
     justify-content: center;
+    margin: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--main-black);
 }
 
 #welcome-image {
-    border-radius: 50%;
     align-self: flex-end;
+    margin: 30px;
+    max-height: 400rem;
+    width: auto;
+    
 }
 
 #prof-pic {
     border-radius: 5%;
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
-    font-size: 100px;
-    word-spacing: -30px;
+    font-size: 7rem;
+    word-spacing: -2rem;
+    line-height: 7rem;
+    white-space: pre;
 }
 
 
 
 #my-name {
     display: inline-block;
-    line-height: 110px;
 }
 
 #cursor {
     display: inline;
-    word-spacing: -40px;
+    word-spacing: -3rem;
     font-size: larger;
 }
 
 #description {
-    font-size: 25px;
+    padding-top: 1vw;
+    font-size: 1.3rem;
 }
 
 #github {
     width: 20px;
     height: 20px;
 }
-
-/* Media Queries */
-
-@media only screen and (max-width: 1022px) {
-    h1 {
-        font-size: 80px;
-        word-spacing: -13px;
-    }
-    #welcome-holder {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    #description {
-        font-size: 20px;
-    }
-    #welcome-text {
-        display: inline-block;
-        vertical-align: middle;
-        height: fit-content;
-    }
-    #welcome-image {}
-    #prof-pic {
-        max-width: 100%;
-        max-height: 100%;
-    }
-}
-
-@media only screen and (max-width: 795px) {
-    h1 {
-        font-size: 10vw;
-        word-spacing: -13px;
-    }
-    #description {
-        font-size: 25px;
-    }
-
-    #welcome-holder {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        gap: 10px;
-    }
-
-    #welcome-text {
-        height: 50%;
-        text-align: center;
-    }
-}
-
-/*  */

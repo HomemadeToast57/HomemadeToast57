@@ -5,6 +5,7 @@ var cursor = true;
         setInterval(() => {
             if(cursor) {
               document.getElementById('cursor').style.opacity = 0;
+              // console.log(document.getElementById('welcome-section').offsetHeight)
               cursor = false;
             }else {
               document.getElementById('cursor').style.opacity = 1;

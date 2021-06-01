@@ -26,7 +26,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 1215px) {
@@ -41,11 +41,12 @@ html {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
     html {
-        font-size: 10px;
+        font-size: 2vw;
     }
 }
+
 /* General */
 
 a, a:visited {
@@ -65,7 +66,7 @@ nav {
     left: 0;
     width: 100vw;
     background-color: white;
-    box-shadow: 0 3px 0 rgba(242, 245, 254, 1);
+    box-shadow: 0 3px 0 rgba(146, 146, 146, 0.3);
     z-index: 10;
 }
 
@@ -95,41 +96,49 @@ nav {
 }
 
 .welcome-holder {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    align-self: center;
-    justify-self: center;
-    justify-content: center;
-    width: 90%;
-    height: 80%;
-    padding-top: 115px;
-    flex: 10;
-    min-height: 00;
+    position: abs;
+   padding-top: 115px;
+   height: calc(100vh - 115px);
+}
+
+.welcome-item {
+    padding: 20px;
+    padding-top: 5%;
 }
 
 #welcome-text {
     width: fit-content;
-    justify-self: center;
-    justify-content: center;
-    margin: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 16rem;
+    padding-bottom: 6rem;
+  
+
+
+   /*  padding-left: 20px;
+    padding-right: 20px; */
     color: var(--main-black);
+    margin-left: 12.5%;
 }
 
 #welcome-image {
-    align-self: flex-end;
-    margin: 30px;
-    max-height: 400rem;
+
+    height: 40vh;
     width: auto;
+    float: right;
+
+    margin-right: 12.5%;
     
+
+  
+
 }
 
 #prof-pic {
-    border-radius: 5%;
     height: 100%;
     width: 100%;
+    object-fit:contain;
+
+
+    /* margin: ; */
 }
 
 h1 {
@@ -137,9 +146,8 @@ h1 {
     word-spacing: -2rem;
     line-height: 7rem;
     white-space: pre;
+    margin: auto;
 }
-
-
 
 #my-name {
     display: inline-block;
@@ -156,7 +164,32 @@ h1 {
     font-size: 1.3rem;
 }
 
+.scroll-down {
+    position: relative;
+    display: flex;
+    height: 25rem;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.scroll-image {
+    
+    height: 80px;
+    width:80px;
+}
+
 #github {
     width: 20px;
     height: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+    #welcome-text {
+        margin: auto;
+    }
+    #welcome-image {
+        margin: auto;
+        float: none;
+    }
 }

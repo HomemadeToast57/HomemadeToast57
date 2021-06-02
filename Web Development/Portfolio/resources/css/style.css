@@ -29,7 +29,7 @@ html {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 1215px) {
+@media only screen and (max-width: 1215px), screen and (max-height: 1060px) {
     html {
         font-size: 14px;
     }
@@ -41,7 +41,7 @@ html {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), screen and (max-height: 860px) {
     html {
         font-size: 8px;
     }
@@ -54,13 +54,26 @@ html {
         font-size: 50%;
     }
 
+}
+
+@media only screen and (max-height: 260px) {
+    html {
+        font-size: 40%;
+    }
+
+}
+
+@media only screen and (max-height: 240px) {
+    html {
+        font-size: 30%;
+    }
 
 }
 
 /* Height */
-@media only screen and (max-height: 840px) {
+/* @media only screen and (max-height: 1140px) {
     html {
-        font-size: 60%;
+        font-size: 75%;
     }
 }
 
@@ -73,7 +86,7 @@ html {
     html {
         font-size: 40%;
     }
-}
+} */
 
 /* General */
 
@@ -137,6 +150,7 @@ nav {
     height: 16rem;
     padding-bottom: 2rem;
     color: var(--main-black);
+    margin-top: 0px;
    /*  margin-left: 12.5%; */
 }
 
@@ -236,8 +250,19 @@ h1 {
     .welcome-holder {
         padding-top: 90px;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-content: center;
     }
+
+    #welcome-text {
+        padding-bottom: 5%;
+    }
+    
+    .welcome-item {
+        padding: 5%;
+    }
+
+    
     
     #prof-pic {
         padding: 30px;

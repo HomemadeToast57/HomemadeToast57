@@ -39,21 +39,41 @@ html {
     html {
         font-size: 12px;
     }
-    #navbar {
-        font-size: 5rem;
-    }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 600px) {
     html {
-        font-size: 2vw;
+        font-size: 8px;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 50%;
     }
 
 
 }
 
 /* Height */
+@media only screen and (max-height: 840px) {
+    html {
+        font-size: 60%;
+    }
+}
 
+@media only screen and (max-height: 600px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media only screen and (max-height: 500px) {
+    html {
+        font-size: 40%;
+    }
+}
 
 /* General */
 
@@ -96,54 +116,50 @@ nav {
 }
 
 .welcome-section {
-    justify-content: center;
+    flex: 1;
     height: 100vh;
-    align-items: center;
     /* margin-bottom: 40px; ADD AFTER SUBMIT*/
     /* padding-bottom: 30px; */
 }
 
 .welcome-holder {
-    position: abs;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
    padding-top: 115px;
    height: calc(100vh - 115px);
-}
-
-.welcome-item {
-    padding: 20px;
-    padding-top: 5%;
 }
 
 #welcome-text {
     display: table;
     height: 16rem;
     padding-bottom: 2rem;
-  
-
-
-   /*  padding-left: 20px;
-    padding-right: 20px; */
     color: var(--main-black);
-    margin-left: 12.5%;
+   /*  margin-left: 12.5%; */
 }
 
 #welcome-image {
 
-    height: 40vh;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 50vh;
     width: auto;
     float: right;
 
-    margin-right: 12.5%;    
+    /* margin-right: 12.5%;  */
+    /* align-self: flex-end;  */  
 
   
 
 }
 
 #prof-pic {
-    height: 100%;
-    width: 100%;
-    object-fit:contain;
-
+    padding: 30px;
+        width: 30rem;
+        height: auto;
+        border-radius: 15%;
 
     /* margin: ; */
 }
@@ -168,11 +184,11 @@ h1 {
 }
 
 #description {
-    padding-top: 2vw;
+    padding-top: 1.4vw;
     font-size: 1.3rem;
 }
 
-.scroll-down {
+/* .scroll-down {
     position: relative;
     display: flex;
     height: 25rem;
@@ -185,7 +201,7 @@ h1 {
     
     height: 80px;
     width:80px;
-}
+} */
 
 .projects-section {
     
@@ -196,7 +212,7 @@ h1 {
     height: 20px;
 }
 
-@media only screen and (max-width: 1400px) {
+/* @media only screen and (max-width: 1400px) {
     #welcome-text {
         margin: auto;
     }
@@ -204,11 +220,30 @@ h1 {
         margin: auto;
         float: none;
     }
-}
+} */
 
 /* fix nav link size on small devices */
 @media only screen and (max-width: 800px) {
     #navbar {
-        font-size: 250%;
+        font-size: 150%;
     }
+}
+
+/* fix horizontal view on mobile devices */
+
+@media only screen and (max-height: 460px) {
+
+    .welcome-holder {
+        padding-top: 90px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    #prof-pic {
+        padding: 30px;
+        width: 150px;
+        height: auto;
+    }
+
+
 }

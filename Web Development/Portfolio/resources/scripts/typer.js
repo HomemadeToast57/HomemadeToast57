@@ -17,7 +17,7 @@ var cursor = true;
 
 
         var i = 0;
-        var txt = "Hey I am\nJacob.";
+        var txt = "Hey I am\nJack.";
         
         var speed = 50;
         function typeWriter() {

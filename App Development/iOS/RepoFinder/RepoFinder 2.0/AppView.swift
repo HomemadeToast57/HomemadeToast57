@@ -7,11 +7,34 @@
 //
 
 import SwiftUI
-import UIKit
-import SDWebImageSwiftUI
 
 struct AppView: View {
     var body: some View {
-    Text("Hello")
+        TabView {
+                    ContentView()
+                        .tabItem {
+                            if #available(iOS 14.0, *) {
+                                Label("Repos", systemImage: "magnifyingglass")
+                            } else {
+                                // Fallback on earlier versions
+                            }
+                        }
+            
+                    SettingsView()
+                .tabItem {
+                    if #available(iOS 14.0, *) {
+                        Label("Settings", systemImage: "gear")
+                    } else {
+                        // Fallback on earlier versions
+                    }
+                }
+                }
+            }
+    }
+
+
+struct AppView_Previews: PreviewProvider {
+    static var previews: some View {
+        AppView()
     }
 }

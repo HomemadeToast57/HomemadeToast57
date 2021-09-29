@@ -24,6 +24,7 @@
 		9A8A23AA23959A4A0068338F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8A23A823959A4A0068338F /* LaunchScreen.storyboard */; };
 		9A8A23B523959A4A0068338F /* RepoFinder_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A23B423959A4A0068338F /* RepoFinder_2_0Tests.swift */; };
 		9A8A23C023959A4A0068338F /* RepoFinder_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8A23BF23959A4A0068338F /* RepoFinder_2_0UITests.swift */; };
+		9AABC4A12704BDCB0033B90D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AABC4A02704BDCB0033B90D /* AppView.swift */; };
 		9AB3F3CC23A05712002A42F2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3F3CB23A05712002A42F2 /* SettingsView.swift */; };
 		9AB3F3D023A05ED3002A42F2 /* SettingsViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3F3CF23A05ED3002A42F2 /* SettingsViewData.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		9A8A23BB23959A4A0068338F /* RepoFinder 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RepoFinder 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8A23BF23959A4A0068338F /* RepoFinder_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoFinder_2_0UITests.swift; sourceTree = "<group>"; };
 		9A8A23C123959A4A0068338F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AABC4A02704BDCB0033B90D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		9AB3F3CB23A05712002A42F2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9AB3F3CF23A05ED3002A42F2 /* SettingsViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewData.swift; sourceTree = "<group>"; };
 		B823DE530AF00C490147B479 /* Pods-RepoFinder 2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoFinder 2.0.debug.xcconfig"; path = "Target Support Files/Pods-RepoFinder 2.0/Pods-RepoFinder 2.0.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				9A8A239D23959A450068338F /* AppDelegate.swift */,
 				9A8A239F23959A450068338F /* SceneDelegate.swift */,
 				9AB3F3CB23A05712002A42F2 /* SettingsView.swift */,
+				9AABC4A02704BDCB0033B90D /* AppView.swift */,
 				9AB3F3CF23A05ED3002A42F2 /* SettingsViewData.swift */,
 				9A8A23A123959A450068338F /* ContentView.swift */,
 				9A2BD26523997E8200F7E384 /* SearchBar.swift */,
@@ -448,6 +451,7 @@
 			files = (
 				9A2BD26623997E8200F7E384 /* SearchBar.swift in Sources */,
 				9A8A239E23959A450068338F /* AppDelegate.swift in Sources */,
+				9AABC4A12704BDCB0033B90D /* AppView.swift in Sources */,
 				9A8A23A023959A450068338F /* SceneDelegate.swift in Sources */,
 				9AB3F3CC23A05712002A42F2 /* SettingsView.swift in Sources */,
 				9A2C5DB2239713FE005325CD /* NetworkManager.swift in Sources */,

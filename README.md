@@ -11,6 +11,6 @@ I'm available on all of these platforms down below ⤵️
 + Discord: [#HomemadeToast#0374](https://discord.com/)
 + Email: [jacobsinger22@gmail.com](mailto:jacobsinger22@gmail.com)
 
+<p>&nbsp;</p>
 
-
-![HomemadeToast57's GitHub stats](https://github-readme-stats.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=radical)
+![HomemadeToast57's GitHub stats](https://github-readme-stats.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=dark)

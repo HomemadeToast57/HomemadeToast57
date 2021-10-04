@@ -8,7 +8,7 @@ Hey! I am a Software Developer from Chicago currently studying for a BS in Compu
 ### Where can you contact me?
 I'm available on all of these platforms down below ⤵️
 + Twitter: [@HomemadeToast57](https://twitter.com/homemadetoast57)
-+ Discord: [#HomemadeToast#0374](https://discord.com/)
++ Discord: [HomemadeToast#0374](https://discord.com/users/HomemadeToast#0374)
 + Email: [jacobsinger22@gmail.com](mailto:jacobsinger22@gmail.com)
 
 <p>&nbsp;</p>

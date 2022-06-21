@@ -13,4 +13,5 @@ Hey! I am a Software Developer from Chicago currently studying for a BS in Compu
 
 <p>&nbsp;</p>
 
-![HomemadeToast57's GitHub stats](https://github-readme-stats.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=dark)
+![HomemadeToast57's GitHub stats](https://github-readme-stats.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=light/#gh-light-mode-only)
+![HomemadeToast57's GitHub stats](https://github-readme-stats.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=dark/#gh-dark-mode-only)

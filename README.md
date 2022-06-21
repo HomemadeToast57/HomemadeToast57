@@ -1,4 +1,4 @@
-![alt text](https://github.com/HomemadeToast57/HomemadeToast/blob/master/Assets/README.gif?raw=true)
+![JackSingerBannerGIF](https://user-images.githubusercontent.com/54961512/174700426-ce99ee80-a70d-4e4c-9b84-07b84f835de0.gif)
 
 ### Hey 👋
 

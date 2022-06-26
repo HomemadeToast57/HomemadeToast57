@@ -1,5 +1,5 @@
-![JackSingerBannerGIF](https://user-images.githubusercontent.com/54961512/174700426-ce99ee80-a70d-4e4c-9b84-07b84f835de0.gif)
-
+![BANNER-LIGHT-GIF](https://user-images.githubusercontent.com/54961512/175797135-edd8c933-2153-47cf-a6a8-840af7952cef.gif#gh-light-mode-only)
+![BANNER-DARK-GIF](https://user-images.githubusercontent.com/54961512/175797141-f6a6cf38-898f-4cea-947b-a74063509834.gif#gh-dark-mode-only)
 ### Hey 👋
 
 ### Who am I?

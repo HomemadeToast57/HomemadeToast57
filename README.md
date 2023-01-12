@@ -14,9 +14,9 @@ Hey! I am a Software Developer from Chicago currently studying for a BS in Compu
 <p>&nbsp;</p>
 
 <a href="https://github.com/HomemadeToast57#gh-light-mode-only">
-  <img src="https://github-readme-stats.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=light#gh-light-mode-only" alt="My GitHub Stats" />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=light#gh-light-mode-only" alt="My GitHub Stats" />
 </a>
 
 <a href="https://github.com/HomemadeToast57#gh-dark-mode-only">
-  <img src="https://github-readme-stats.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=dark#gh-dark-mode-only" alt="My GitHub Stats" />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=HomemadeToast57&show_icons=true&theme=dark#gh-dark-mode-only" alt="My GitHub Stats" />
 </a>

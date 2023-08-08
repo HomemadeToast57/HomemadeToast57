@@ -10,13 +10,3 @@ Hey! I am a Software Developer from Chicago currently studying for a BS in Compu
 + Twitter: [@HomemadeToast57](https://twitter.com/homemadetoast57)
 + Discord: [HomemadeToast#0374](https://discord.com/users/HomemadeToast#0374)
 + Email: [jacobsinger22@gmail.com](mailto:jacobsinger22@gmail.com)
-
-<p>&nbsp;</p>
-
-<a href="https://github.com/HomemadeToast57#gh-light-mode-only">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=HomemadeToast57&show_icons=true&count_private=true&theme=light#gh-light-mode-only" alt="My GitHub Stats" />
-</a>
-
-<a href="https://github.com/HomemadeToast57#gh-dark-mode-only">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=HomemadeToast57&count_private=true&show_icons=true&theme=dark#gh-dark-mode-only" alt="My GitHub Stats" />
-</a>

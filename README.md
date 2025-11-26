@@ -6,7 +6,7 @@
 ### Who am I?
 Hey! My name is Jack and I’m a Software Engineer at [CodeHS](https://codehs.com), based in Chicago. I earned my BS in Computer Science from the Watson School of Engineering and Applied Sciences at SUNY Binghamton University.
 
-I’m always learning and hacking — from building web and mobile apps, to developing games, designing robots, or picking up new programming languages (I’ve got over 10 under my belt!). Learning is my passion, and my projects reflect a wide range of interests and skills.
+I’m always learning and hacking — from building web and mobile apps, to developing games, designing robots, or picking up new skills. Learning is my passion, and my projects reflect a wide range of interests and skills.
 
 ### Where can you contact me?
 + Portfolio Website: [jacksinger.dev](https://jacksinger.dev)  

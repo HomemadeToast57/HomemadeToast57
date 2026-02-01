@@ -13,3 +13,5 @@ I’m always learning and hacking — from building web and mobile apps, to deve
 + Twitter: [@HomemadeToast57](https://twitter.com/homemadetoast57)  
 + Discord: [HomemadeToast#0374](https://discord.com/users/HomemadeToast#0374)  
 + Email: [jacobsinger22@gmail.com](mailto:jacobsinger22@gmail.com)
+
+![My GitHub Game](game.gif)
